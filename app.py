@@ -87,5 +87,14 @@ def login():
         return make_response('Unable to verify', 403, {'WWW-Authenticate': 'Basic realm: "Authentication Failed "'})
 
 
+# Homework: You can try to create a logout page
+
+
+@app.route('/logout', methods=['POST'])
+def logout():
+    pass
+# your code goes here
+
+
 if __name__ == "__main__":
     app.run(debug=True)
